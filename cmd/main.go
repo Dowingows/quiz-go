@@ -7,6 +7,8 @@ import (
 
 func main() {
 
+	database.ConnectRedis()
+
 	database.ConnectDb()
 
 	app := fiber.New()
